@@ -1,3 +1,36 @@
 // Place your key bindings in this file to override the defaults
 [
+    {
+        "key": "ctrl+alt+v",
+        "command": "toggleVim"
+    },
+    
+    // FILE TREE
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+     
+    // TERMINAL
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
 ]
