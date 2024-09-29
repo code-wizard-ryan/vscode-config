@@ -45,4 +45,6 @@
         // toggle comment selection
         { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
     ],
+
+    "workbench.sideBar.location": "right",
 }

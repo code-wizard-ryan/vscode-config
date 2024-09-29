@@ -7,7 +7,7 @@
     
     // FILE TREE
     {
-        "key": "ctrl+shift+h",
+        "key": "ctrl+shift+l",
         "command": "workbench.view.explorer",
         "when": "viewContainer.workbench.view.explorer.enabled"
     },
