@@ -31,6 +31,10 @@
         // new line insertion
         { "before": ["o", "o"], "after": ["o", "<Esc>"]},
         { "before": ["O", "o"], "after": ["O", "<Esc>"]},
+        
+        // half page navigation
+        { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"]},
+        { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"]},
     ], 
     
     // VIN INSERT MODE
