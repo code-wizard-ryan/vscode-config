@@ -1,5 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
+    // TOGGLE VIM  
     {
         "key": "ctrl+alt+v",
         "command": "toggleVim"
@@ -32,5 +33,17 @@
         "key": "ctrl+shift+w",
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
+    },
+    
+    // AUTO-COMPLETE NAVIGATION
+    {
+        "key": "shift+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
 ]

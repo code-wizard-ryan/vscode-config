@@ -26,7 +26,11 @@
         { "before": ["leader", "h"], "commands": ["workbench.action.focusLeftGroup"] },
         { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
         { "before": ["leader", "k"], "commands": ["workbench.action.focusAboveGroup"] },
-        { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] }
+        { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
+       
+        // new line insertion
+        { "before": ["o", "o"], "after": ["o", "<Esc>"]},
+        { "before": ["O", "o"], "after": ["O", "<Esc>"]},
     ], 
     
     // VIN INSERT MODE
