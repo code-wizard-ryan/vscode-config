@@ -23,10 +23,10 @@
         { "before": ["leader", "s"], "commands": [":split"] },
 
         // panes
-        { "before": ["leader", "h"], "commands": ["workbench.action.focusLeftGroup"] },
-        { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
-        { "before": ["leader", "k"], "commands": ["workbench.action.focusAboveGroup"] },
-        { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
+        { "before": ["<C-h>"], "commands": ["workbench.action.focusLeftGroup"] },
+        { "before": ["<C-j>"], "commands": ["workbench.action.focusBelowGroup"] },
+        { "before": ["<C-k>"], "commands": ["workbench.action.focusAboveGroup"] },
+        { "before": ["<C-l>"], "commands": ["workbench.action.focusRightGroup"] },
        
         // new line insertion
         { "before": ["o", "o"], "after": ["o", "<Esc>"]},
@@ -35,6 +35,9 @@
         // half page navigation
         { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"]},
         { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"]},
+      
+        // remove highlighted search
+        { "before": ["<Esc>"], "commands": [":nohl"]},
     ], 
     
     // VIN INSERT MODE
@@ -50,8 +53,6 @@
         // Move selected lines while staying in visual mode
         { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
         { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
-        // toggle comment selection
-        { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
     ],
 
     "workbench.sideBar.location": "right",
